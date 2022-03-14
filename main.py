@@ -4,7 +4,7 @@ import requests
 
 
 def main():
-    skydera_url = 'https://skydera-dev-api.cloudstart.co/infra/preview/deploy'
+    skydera_url = 'https://skydera-dev-api.cloudstart.co/infra/preview/destroy'
 
     headers = {
         'Content-Type': 'application/json',
