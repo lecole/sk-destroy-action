@@ -11,6 +11,9 @@ inputs:
   skyApiKey:
     description: "Skydera API key"
     required: true
+  prNumber:
+    description: "Pull request number"
+    required: true
 outputs:
   myOutput:
     description: "Output from the action"

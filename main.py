@@ -14,12 +14,13 @@ def main():
     api_username = '__token__'
     api_key = os.environ["INPUT_SKYAPIKEY"]
 
-    for k, v in os.environ.items():
-        print(k, v)
+    # for k, v in os.environ.items():
+    #     print(k, v)
 
     data = {
         'git_intg_access_id': os.environ["INPUT_SKYGITINTGACCESSID"],
         'git_repo_slug': os.environ["INPUT_SKYGITREPOSLUG"],
+        'gh_pr_number': os.environ["INPUT_PRNUMBER"],
 
         # 'github_base_ref': os.environ["GITHUB_BASE_REF"],
         # 'github_pull_request_number': os.environ["GITHUB_REF"].split('/')[2],
