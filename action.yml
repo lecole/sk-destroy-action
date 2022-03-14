@@ -1,0 +1,19 @@
+name: "Dev Skydera Preview Destroy Action"
+description: "Get started with Python Container actions"
+author: "Lecole Cole"
+inputs:
+  skyGitIntgAccessId:
+    description: "Github integration ID"
+    required: true
+  skyGitRepoSlug:
+    description: "Application slug ID for the preview application"
+    required: true
+  skyApiKey:
+    description: "Skydera API key"
+    required: true
+outputs:
+  myOutput:
+    description: "Output from the action"
+runs:
+  using: "docker"
+  image: "Dockerfile"
