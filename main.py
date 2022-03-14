@@ -15,7 +15,6 @@ def main():
     api_key = os.environ["INPUT_SKYAPIKEY"]
 
     data = {
-        'app_def_id': os.environ["INPUT_SKYAPPDEFID"],
         'git_intg_access_id': os.environ["INPUT_SKYGITINTGACCESSID"],
         'git_repo_slug': os.environ["INPUT_SKYGITREPOSLUG"],
 
