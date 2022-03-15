@@ -20,8 +20,8 @@ def main():
     data = {
         'git_intg_access_id': os.environ["INPUT_SKYGITINTGACCESSID"],
         'git_repo_slug': os.environ["INPUT_SKYGITREPOSLUG"],
-        'gh_pr_number': os.environ["INPUT_PRNUMBER"],
 
+        'gh_pr_number': os.environ["INPUT_PRNUMBER"],
         'gh_base_ref': os.environ["GITHUB_BASE_REF"],
         'gh_actor': os.environ["GITHUB_ACTOR"],
         'gh_event_name': os.environ["GITHUB_EVENT_NAME"],
