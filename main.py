@@ -14,8 +14,8 @@ def main():
     api_username = '__token__'
     api_key = os.environ["INPUT_SKYAPIKEY"]
 
-    # for k, v in os.environ.items():
-    #     print(k, v)
+    for k, v in os.environ.items():
+        print(k, v)
 
     data = {
         'git_intg_access_id': os.environ["INPUT_SKYGITINTGACCESSID"],
