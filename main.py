@@ -30,6 +30,9 @@ def main():
         'gh_repo_owner': os.environ["GITHUB_REPOSITORY_OWNER"],
     }
 
+    for k, v in data.items():
+        print(k, v)
+
     query_data = requests.post(
         skydera_url,
         data=json.dumps(data),
