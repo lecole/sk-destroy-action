@@ -26,6 +26,7 @@ def main():
         'gh_actor': os.environ["GITHUB_ACTOR"],
         'gh_event_name': os.environ["GITHUB_EVENT_NAME"],
         'gh_head_ref': os.environ["GITHUB_HEAD_REF"],
+        'gh_repo': os.environ["GITHUB_REPOSITORY"],
         'gh_repo_owner': os.environ["GITHUB_REPOSITORY_OWNER"],
     }
 
