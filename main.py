@@ -4,7 +4,8 @@ import requests
 
 
 def main():
-    skydera_url = 'https://skydera-dev-api.cloudstart.co/infra/preview/destroy'
+    # skydera_url = 'https://skydera-dev-api.cloudstart.co/infra/preview/destroy'
+    skydera_url = 'https://api-git.skydera.com/infra/preview/destroy'
 
     headers = {
         'Content-Type': 'application/json',
@@ -30,8 +31,8 @@ def main():
         'gh_repo_owner': os.environ["GITHUB_REPOSITORY_OWNER"],
     }
 
-    for k, v in data.items():
-        print(k, v)
+    # for k, v in data.items():
+    #     print(k, v)
 
     query_data = requests.post(
         skydera_url,
